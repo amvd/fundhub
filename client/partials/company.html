@@ -1,0 +1,36 @@
+<div ng-controller="CompaniesController" style="width: 1000px;">
+	<div>
+		<div style="width: 650px; display: inline-block;">
+			<img src="./../static/{{companies.logo}}.jpg" alt="company logo" >
+			{{ companies.name }}
+			{{ companies.project_title }}
+			<img src="./../static/{{companies.logo}}.jpg" alt="company logo" style="width: 500px; height: 250px;">
+		</div>
+
+		<div style="width: 300px; display: inline-block;">
+			<h4>{{ companies.project_funders }} Funders</h4>
+			<h4>${{ companies.project_target }}</h4>
+			<p>pledged of {{ companies.project_current }} goal</p>
+			<h4>{{ companies.project_deadline }}</h4>
+			<a href="#/invest/{{ companies.id }}"><input type="submit" ng-click="invest()" value="Invest in this Project" class="btn-primary"></a>
+		</div>
+	</div>
+	
+	<div>
+		<div style="width: 650 px; display: inline-block;">
+			<h3>About this project</h3>
+			{{ companies.project_description }}
+			<h3>Highlights</h3>
+			<p>#1. {{ companies.project_highlight#1 }} </p>
+			<p>#2. {{ companies.project_highlight#2 }} </p>
+			<p>#3. {{ companies.project_highlight#3 }} </p>
+			<h3>Elevator Pitch</h3>
+		</div>
+
+		<div style="width: 300px; display: inline-block;">
+			<h4>Documents</h4>
+			<a href="">Investor Pitch Deck-1</a>
+			<a href="">Investor Pitch Deck-2</a>
+		</div>
+	</div>
+</div>	
