@@ -1,0 +1,10 @@
+{
+	"name": "FundHub",
+	"description": "Crowdfunding site for International Investors to support Indian Startups",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "^4.13.3",
+	    "mongoose": "latest",
+	    "body-parser": "latest"
+	}
+}
