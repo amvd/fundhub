@@ -23,6 +23,30 @@
 			      .when('/success',{
 			          templateUrl: './../partials/success.html'
 			      })
+			      .when('/all_projects',{
+			          templateUrl: './../partials/all_projects.html'
+			      })
+			      .when('/contact_us',{
+			          templateUrl: './../partials/contact_us.html'
+			      })
+			      .when('/about_us',{
+			          templateUrl: './../partials/about_us.html'
+			      })
+			      .when('/faq',{
+			          templateUrl: './../partials/faq.html'
+			      })
+			      .when('/security',{
+			          templateUrl: './../partials/security.html'
+			      })
+			      .when('/raise_funds',{
+			          templateUrl: './../partials/raise_funds.html'
+			      })
+			      .when('/explore',{
+			          templateUrl: './../partials/explore.html'
+			      })
+			      .when('/what_is_fundhub',{
+			          templateUrl: './../partials/what_is_fundhub.html'
+			      })
 			      .when('/comapany/:companyId',{
 			          templateUrl: './../partials/comapany.html',
 			          controller: 'CompaniesController'
@@ -50,21 +74,31 @@
 	         					});    
 	            	callback(users);
 	          	});
+	         factory.getPopularProjects = function(callback) {
+	            $http.get('/getPopularProjects').success(function(output) {
+		            users = output;
+		            callback(users);
+	            });
+        	}
+
+        	factory.getRecentlyFunded = function(callback) {
+	            $http.get('/getRecentlyFunded').success(function(output) {
+		            users = output;
+		            callback(users);
+	            });
         	}
 
 	     return factory
         })
 
         myApp.controller('UsersController', function($scope, UsersFactory) {
-	     //    UsersFactory.getUsers(function(data) {
-	     //    $scope.users = data;
-	     //    })
+	        UsersFactory.getPopularProjects(function(data) {
+	        $scope.users = data;
+	        })
 
-	    	// $scope.addUser = function() {
-	     //      UsersFactory.addUser($scope.newUser, function() {
-	     //      	console.log("$scope.newUser", $scope.newUser);
-	     //      });
-	        }
+	        UsersFactory.getRecentlyFunded(function(data) {
+	        $scope.users = data;
+	        })
     	});
 
         myApp.controller('CompaniesController', function($scope, $routeParams, UsersFactory) {
