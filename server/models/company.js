@@ -8,7 +8,6 @@ var CompanySchema = new mongoose.Schema({
 	logoUrl: String,
 	location: String,
 	projects: [{type: Schema.Types.ObjectId, ref: "Investors"}]
-	
 });
 
 mongoose.model("Companies", CompanySchema);

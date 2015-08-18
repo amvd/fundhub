@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-var Investments = mongoose.model("Investment");
+var Investments = mongoose.model("Investments");
 
 var Investors = mongoose.model("Investors");
 
@@ -87,4 +87,4 @@ module.exports = (function(){
 			});
 		}
 	}
-});
+})();

@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var InvestmentSchema = new mongoose.Schema({
 	created_at: {type: Date, default: new Date},
-	amount: Number;
+	amount: Number,
 	projectTitle: String,
 	investorName: String,
 	_project: {type: Schema.ObjectId},
@@ -12,4 +12,4 @@ var InvestmentSchema = new mongoose.Schema({
 	
 });
 
-mongoose.model("Companies", CompanySchema);
+mongoose.model("Investments", InvestmentSchema);

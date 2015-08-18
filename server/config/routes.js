@@ -8,5 +8,20 @@ var Projects = require("../controllers/projects.js");
 
 module.exports = function(app){
 
+	app.get("/show_a_company/:id", function(req,res){
+		Companies.readOne(req,res);
+	});
+
+	app.post("/create", function(req,res){
+		Projects.create(req, res);
+	});
+
+	app.get("/getPopularProjects", function(req, res){
+		Projects.findPopular(req,res);
+	});
+
+	app.get("/getRecentlyFunded", function(req, res){
+		Projects.findRecent(req,res);
+	});
 
 }

@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 
 var InvestorSchema = new mongoose.Schema({
 	name: String,
-	createdAt: {type: Date, default: new Date}
+	createdAt: {type: Date, default: new Date},
 	investments: [{type: Schema.Types.ObjectId, ref: "Investments"}]
 });
 
-mongoose.model("Investor", InvestorSchema);
+mongoose.model("Investors", InvestorSchema);

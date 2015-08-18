@@ -67,13 +67,15 @@
 	            });
 	        },
 
-	        factory.create = function(info, callback) {
+	        factory.create = function(info, callback) { //create project
 
 	            $http.post('/create', info).success(function() {
 	            	users.push({
 	         					});    
 	            	callback(users);
 	          	});
+	        }
+	        
 	         factory.getPopularProjects = function(callback) {
 	            $http.get('/getPopularProjects').success(function(output) {
 		            users = output;
@@ -89,7 +91,7 @@
         	}
 
 	     return factory
-        })
+        });
 	  	</script>
 
 	  	<script type="text/javascript" src="client_controllers.js">

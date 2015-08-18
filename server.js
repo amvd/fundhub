@@ -14,5 +14,5 @@ require("./server/config/routes.js")(app);
 app.use(express.static(path.join(__dirname, "./client")));
 
 app.listen(8000, function() {
-	console.log("Black belt loading on port 8000");
+	console.log("Loading on port 8000");
 });

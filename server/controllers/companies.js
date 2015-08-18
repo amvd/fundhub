@@ -20,7 +20,18 @@ module.exports = (function(){
 
 		read: function(req,res){
 			console.log("DING companies controller read");
-			Companies.find({_id: req.companyId}, function(err, results){
+			Companies.find({}, function(err, results){
+				if(err){
+					console.log(err);
+				} else {
+					res.json(results);
+				}
+			});
+		},
+
+		readOne: function(req,res){
+			console.log("DING companies controller read");
+			Companies.findOne({_id: req.params.id}, function(err, results){
 				if(err){
 					console.log(err);
 				} else {
@@ -37,4 +48,4 @@ module.exports = (function(){
 			});
 		}
 	}
-});
+})();
