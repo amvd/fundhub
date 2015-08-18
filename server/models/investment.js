@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var InvestmentSchema = new mongoose.Schema({
 	created_at: {type: Date, default: new Date},
+	amount: Number;
 	projectTitle: String,
 	investorName: String,
 	_project: {type: Schema.ObjectId},
