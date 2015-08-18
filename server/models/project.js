@@ -24,7 +24,7 @@ var ProjectSchema = new mongoose.Schema({
 		summaryPath: String,
 		termPath: String
 	],
-	investments: [{type: Schema.Types.ObjectId, ref: "Investments"}],
+	investments: [{type: Schema.Types.ObjectId, ref: "Investments"}]
 });
 
 mongoose.model("Projects", ProjectSchema);
