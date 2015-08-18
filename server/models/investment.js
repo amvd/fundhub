@@ -2,12 +2,12 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-var CompanySchema = new mongoose.Schema({
-	name: String,
+var InvestmentSchema = new mongoose.Schema({
 	created_at: {type: Date, default: new Date},
-	logoUrl: String,
-	location: String,
-	projects: [{type: Schema.Types.ObjectId, ref: "Investors"}]
+	projectTitle: String,
+	investorName: String,
+	_project: {type: Schema.ObjectId},
+	_investor: {type: Schema.ObjectId}
 	
 });
 
