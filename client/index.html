@@ -92,6 +92,12 @@
 		            callback(users);
 	            });
         	}
+        	factory.register = function(info, callback) {
+        		console.log("in the factory");
+	        	$http.post('/signup', info).success(function(response){
+              callback(response);
+            })
+        	}
 
 	     return factory
         });
