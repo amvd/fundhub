@@ -17,9 +17,7 @@
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 	  	<script type="text/javascript">
-	  		var path = require('path');
 
-			module.exports = require(path.join(__dirname, 'lib'));
 
 			var myApp = angular.module('project_app', ['ngRoute', 'LocalStorageModule']);
 			myApp.config(function($routeProvider)
@@ -93,12 +91,9 @@
 	         					});    
 	            	callback(users);
 	          	});
-<<<<<<< HEAD
+
 	        }
-	        
-=======
-	         }
->>>>>>> front-end
+
 	         factory.getPopularProjects = function(callback) {
 	            $http.get('/getPopularProjects').success(function(output) {
 		            users = output;
@@ -131,13 +126,10 @@
         });
 	  	</script>
 
-<<<<<<< HEAD
+
 	  	<script type="text/javascript" src="client_controllers.js"></script>
 	  	<script type="text/javascript" src="login.js"></script>
-=======
-	  	<script type="text/javascript" src="client_controllers.js">
-	  	</script>
->>>>>>> front-end
+
 
 </head>
 <body style="background-color: #F4F8FB;">
