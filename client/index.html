@@ -104,6 +104,14 @@
 	            });
         	}
 
+        	factory.investment = function(info, callback) {
+	            $http.post('/investment', info).success(function() {
+	            users.push({                       
+	                       });    
+	            callback(users);
+	          });
+	         }
+
 	     return factory
         })
 	  	</script>
