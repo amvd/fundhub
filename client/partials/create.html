@@ -1,34 +1,34 @@
 <div ng-controller="ProjectsController">
 	<h3>Create a campaign</h3>
-		<p>Company Name* : <input type="text" name="company_name" ng-model='newCompany.name'></p>
-		<p>Company Logo : <input type="file" name="logo" alt="Company logo" ng-model='newCompany.logo'></p>
-		<p>Company Location : 	<select ng-model='newCompany.location'>
+		<p>Company Name* : <input type="text" name="company_name" ng-model='newProject.name'></p>
+		<p>Company Logo : <input type="file" name="logo" alt="Company logo" ng-model='newProject.logo'></p>
+		<p>Company Location : 	<select ng-model='newProject.location'>
 									<option>India</option>
 									<option>USA</option>
 								</select>
 		</p>
 	<h3>Project Details</h3>
-		<p>Project video: <input type="file" name="project_video" ng-model='newCompany.project_video'></p>
-		<p>Project Title : <input type="text" name="name" name="title" ng-model='newCompany.project_title'></p>
-		<p>Project Description : <input type="text" name="name" name="description" ng-model='newCompany.project_description'></p>
+		<p>Project video: <input type="file" name="project_video" ng-model='newProject.project_video'></p>
+		<p>Project Title : <input type="text" name="name" name="title" ng-model='newProject.project_title'></p>
+		<p>Project Description : <input type="text" name="name" name="description" ng-model='newProject.project_description'></p>
 	<h3>Investment details</h3>
 		<p><a href="#/">Fundraise details</a></p>
-		<p>Fundraising Goal : <input type="text" name="name" name="goal" ng-model='newCompany.project_goal'></p>
-		<p>Minimum Investment Amount : <input type="text" name="name" name="min_investment" ng-model='newCompany.project_minimum_investment'></p>
-		<p>Deadline : <input type="date" name="name" name="deadline" ng-model='newCompany.project_deadline'></p>
+		<p>Fundraising Goal : <input type="text" name="name" name="goal" ng-model='newProject.project_goal'></p>
+		<p>Minimum Investment Amount : <input type="text" name="name" name="min_investment" ng-model='newProject.project_minimum_investment'></p>
+		<p>Deadline : <input type="date" name="name" name="deadline" ng-model='newProject.project_deadline'></p>
 	<h3>Pitch Content</h3>
 		<p>Impress your investors here. This will be featured at the top of your deal.</p>
-		<p>#1. <input type="text" name="highlighter_1" placeholder="One liner" ng-model='newCompany.project_highlight#1'></p>
-		<p>#2. <input type="text" name="highlighter_2" placeholder="One liner" ng-model='newCompany.project_highlight#2'></p>
-		<p>#3. <input type="text" name="highlighter_3" placeholder="One liner" ng-model='newCompany.project_highlight#3'></p>
+		<p>#1. <input type="text" name="highlighter_1" placeholder="One liner" ng-model='newProject.project_highlight#1'></p>
+		<p>#2. <input type="text" name="highlighter_2" placeholder="One liner" ng-model='newProject.project_highlight#2'></p>
+		<p>#3. <input type="text" name="highlighter_3" placeholder="One liner" ng-model='newProject.project_highlight#3'></p>
 	<h3>Elevator Pitch</h3>
-		<p><input type="text" name="elevator_pitch" placeholder="200 characters" ng-model='newCompany.project_elevator'></p>
+		<p><input type="text" name="elevator_pitch" placeholder="200 characters" ng-model='newProject.project_elevator'></p>
 	<h3>Deal Documents</h3>
-		<p>Executive Summary: <input type="file" name="executive_summary" ng-model='newCompany.project_executive_summary'></p>
-		<p>Term Sheet: <input type="file" name="term_sheet" ng-model='newCompany.project_term_sheet'></p>
+		<p>Executive Summary: <input type="file" name="executive_summary" ng-model='newProject.project_executive_summary'></p>
+		<p>Term Sheet: <input type="file" name="term_sheet" ng-model='newProject.project_term_sheet'></p>
 		<p>Legal information you should be aware of </p>
 		<p>Lorem ipsum</p>
 		<p><input type="checkbox"> I agree to the terms and conditions</p>
-	<a href="#/success"><input type="submit" ng-click="create()" value="Submit for Review" class="btn-primary"></a>
+	<a href="#/success"><input type="submit" ng-click="createProject()" value="Submit for Review" class="btn-primary"></a>
 	<a href="#/home"><input type="submit" value="Cancel" class="btn-primary"></a>
 </div>
