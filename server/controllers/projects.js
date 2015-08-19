@@ -7,7 +7,38 @@ module.exports = (function(){
 		create: function(req, res){
 			console.log("DING projects controller create");
 
-			var project = new Projects(req.body);
+			var input = req.body;
+
+			var project = new Projects({
+				name: input.name,
+				logoUrl: input.logo,
+				location: input.location,
+				title: input.project_title,
+				closingDate: input.project_deadline,
+				category: input.category, // needs to be made
+				media: {
+					imageUrl: input.image, // needs to be made
+					videoUrl: input.project_video
+				},
+				descriptives: {
+					description: input.project_description,
+					pitch: input.project_elevator,
+					highlights: [
+						input.project_highlight1,
+						input.project_highlight2,
+						input.project_highlight3
+					]
+				},
+				finance: {
+					goal: input.project_goal,
+					minimum: input.project_minimum_investment
+				},
+				docs: {
+					summaryPath: input.project_executive_summary,
+					termPath: input.project_term_sheet
+				}
+
+			});
 
 			project.save(function(err, result){
 				if(err){
