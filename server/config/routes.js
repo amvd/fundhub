@@ -24,8 +24,12 @@ module.exports = function(app){
 		Projects.findRecent(req,res);
 	});
 
+	app.get("/createCompany", function(req, res){
+		Companies.create(req,res);
+	});
+
 	app.post("/signup", function(req, res){
-		console.log("Im in routes", req.body);
+		console.log("I'm in routes", req.body);
 	});
 
 }

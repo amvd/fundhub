@@ -3,6 +3,9 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var ProjectSchema = new mongoose.Schema({
+	name: String,
+	logoUrl: String,
+	location: String,
 	createdAt: {type: Date, default: new Date},
 	title: String,
 	closingDate: Date,

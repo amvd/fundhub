@@ -70,9 +70,9 @@
 	            });
 	        },
 
-	        factory.create = function(info, callback) { //create project
+	        factory.createCompany = function(info, callback) { //create project
 
-	            $http.post('/create', info).success(function() {
+	            $http.post('/createCompany', info).success(function() {
 	            	users.push({
 	         					});    
 	            	callback(users);
