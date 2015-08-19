@@ -24,4 +24,9 @@ module.exports = function(app){
 		Projects.findRecent(req,res);
 	});
 
+	app.post("/signup", function(req, res){
+		console.log("Im in routes", req.body);
+		//Projects.login(req,res);
+	});
+
 }

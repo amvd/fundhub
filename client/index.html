@@ -47,9 +47,12 @@
 			      .when('/what_is_fundhub',{
 			          templateUrl: './../partials/what_is_fundhub.html'
 			      })
-			      .when('/comapany/:companyId',{
-			          templateUrl: './../partials/comapany.html',
+			      .when('/company/:companyId',{
+			          templateUrl: './../partials/company.html',
 			          controller: 'CompaniesController'
+			      })
+			      .when('/user/signup',{
+			          templateUrl: './../partials/login.html'
 			      })
 			      .otherwise({
 			        templateUrl: './../partials/home.html'
@@ -89,13 +92,20 @@
 		            callback(users);
 	            });
         	}
+        	factory.register = function(info, callback) {
+        		console.log("in the factory");
+	        	$http.post('/signup', info).success(function(response){
+              callback(response);
+            })
+        	}
 
 	     return factory
         });
 	  	</script>
 
-	  	<script type="text/javascript" src="client_controllers.js">
-	  	</script>
+	  	<script type="text/javascript" src="client_controllers.js"></script>
+	  	<script type="text/javascript" src="login.js"></script>
+
 </head>
 <body>
 	<div ng-view=""></div>
