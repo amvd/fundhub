@@ -21,7 +21,24 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     });
 });	
 
+<<<<<<< HEAD
 myApp.controller('ProjectsController', function($scope, UsersFactory) {
+=======
+	        UsersFactory.get_one_company(id, function(data) {
+	        $scope.companies = data;
+	        })
+
+	        $scope.investment = function() {
+	          UsersFactory.investment($scope.newInvestment, function() {
+	            UserssFactory.get_one_company(id, function(data) {
+	            $scope.companies = data;
+	            console.log(data);
+	            });
+	          });
+	            $scope.newInvestment = {};
+	        }
+    	});	
+>>>>>>> front-end
 
 	// UsersFactory.create($scope.newCompany, function() {
 	// 		            	UsersFactory.getCompanies(function(data) {
