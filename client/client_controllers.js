@@ -42,7 +42,7 @@ myApp.controller('ProjectsController', function($scope, UsersFactory) {
 				UsersFactory.createCompany($scope.newCompany, function(data) {
 						$scope.company = data;
 					});
-				}
+			}
     	});	
 
 
