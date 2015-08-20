@@ -1,8 +1,20 @@
 <div ng-controller="RegisterController">
-  First Name <input type="text" ng-model="registerUser.fname"><br/>
-  Last Name <input type="text" ng-model="registerUser.lname"><br/>
-  E-Mail <input type="text" ng-model="registerUser.email"><br/>
-  Password <input type="password" ng-model="registerUser.password"><br/>
-  Confirm password <input type="password"><br/>
-  <input type ="submit" ng-click="register()"><br/>
+  <form name="myForm" novalidate>
+
+  <p>Email:<br>
+    <input type="email" name="email" ng-model="registerUser.email" required="">
+    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid || myForm.$submitted">
+    <span ng-show="myForm.email.$error.required">Email is required.</span>
+    <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+    </span>
+  </p>
+  <p>
+    Password <input type="password" name="password" ng-model="registerUser.password" required>
+    <span style="color:red" ng-show="myForm.password.$dirty">
+      <span ng-show="myForm.password.$error.required">Password is required.</span>
+    </span>
+  </p>
+  
+  <input type ="submit" ng-disabled="myForm.email.$dirty && myForm.email.$invalid || myForm.password.$dirty && myForm.password.$invalid"><br/>
+</form>
 </div>
