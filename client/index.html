@@ -17,6 +17,41 @@
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 	  	<script type="text/javascript">
+			var num=1
+			img1 = new Image ()
+			img1.src = "./static/information.jpg"
+			img2 = new Image ()
+			img2.src = "./static/interference.jpg"
+			img3 = new Image ()
+			img3.src = "./static/message.jpg"
+			img4 = new Image ()
+			img4.src = "./static/nervous.jpg" 
+
+			text1 = "Stand out"
+			text2 = "Connecting the dots"
+			text3 = "We build teams"
+			text4 = "We are different"
+
+			function slideshowUp()
+			{
+				num=num+1
+				if (num==5)
+				{num=1}
+				document.mypic.src=eval("img"+num+".src")
+				document.joe.burns.value=eval("text"+num)
+			}
+
+			function slideshowBack()
+			{
+				num=num-1
+				if (num==0)
+				{num=4}
+				document.mypic.src=eval("img"+num+".src")
+				document.joe.burns.value=eval("text"+num)
+			}
+		</script>
+
+	  	<script type="text/javascript">
 
 			var myApp = angular.module('project_app', ['ngRoute', 'LocalStorageModule']);
 			myApp.config(function($routeProvider)

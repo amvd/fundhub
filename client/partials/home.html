@@ -1,24 +1,24 @@
 <div ng-controller="UsersController">
 
-<div id="container" style="width: 100%;">
+    <div id="container" style="width: 100%;">
 
-    <header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-6">
-        <h1><a href="#/home"><h1 style="color: #FF3333;">FundHub</h1></a>
-          <p class="lead">Dreams in Motion</p></h1>
-      </div>
-      <div class="col col-sm-6">
-        <div class="well pull-right">
-          <img src="./static/logo.jpg" alt="fundhub_logo" style="heigth:100px; width:75px;">        
-        </div>
-      </div>
-      
+        <header class="masthead">
+            <div class="container">
+              <div class="row">
+                <div class="col col-sm-6">
+                  <h1><a href="#/home"><h1 style="color: #FF3333;">FundHub</h1></a>
+                    <p class="lead">Dreams in Motion</p></h1>
+                </div>
+                <div class="col col-sm-6">
+                  <div class="well pull-right">
+                    <img src="./static/logo.jpg" alt="fundhub_logo" style="heigth:100px; width:75px;">    
+                  </div>
+                </div>
+                
+              </div>
+              </div>
+        </header>
     </div>
-    </div>
-    </header>
-</div>
 
   <div class="container">
   <div class="row">
@@ -30,57 +30,21 @@
         </div>
         </div>
         
-        <div id="slideshow" style="heigth:500px; width: 100%;">
-    <script type="text/javascript">
-      var num=1
-      img1 = new Image ()
-      img1.src = "./static/information.jpg"
-      img1.alt = "slideshow pic"
-      img2 = new Image ()
-      img2.src = "./static/interference.jpg"
-      img3 = new Image ()
-      img3.src = "./static/message.jpg"
-      img4 = new Image ()
-      img4.src = "./static/nervous.jpg" 
-
-      text1 = "Stand out"
-      text2 = "Connecting the dots"
-      text3 = "We build teams"
-      text4 = "We are different"
-
-      function slideshowUp()
-      {
-      num=num+1
-      if (num==5)
-      {num=1}
-      document.mypic.src=eval("img"+num+".src")
-      document.joe.burns.value=eval("text"+num)
-      }
-
-      function slideshowBack()
-      {
-      num=num-1
-      if (num==0)
-      {num=4}
-      document.mypic.src=eval("img"+num+".src")
-      document.joe.burns.value=eval("text"+num)
-      }
+        <div id="slideshow" style="heigth:400px; width: 100%;">
 
 
-    </SCRIPT>
+          <CENTER>
+              <IMG SRC="./../static/information.jpg" NAME="mypic" BORDER=0 HEIGHT="400" WIDTH="100%">
 
-      <CENTER>
-        <IMG SRC="./static/information.jpg" NAME="mypic" BORDER=0 HEIGHT="400" WIDTH="100%">
-        <p>
+              <FORM NAME="joe">
+                <INPUT TYPE="text" WIDTH="350" NAME="burns" VALUE="Stand out">
+              </FORM>
 
-        <FORM NAME="joe">
-          <INPUT TYPE="text" WIDTH="350" NAME="burns" VALUE="Stand out">
-        </FORM>
-
-        <A HREF="JavaScript:slideshowBack()"> Back</A>
-        <A HREF="JavaScript:slideshowUp()"> Next</A> 
-      </center>
-    </div>
+              <A HREF="JavaScript:slideshowBack()">Back</A>
+              <A HREF="JavaScript:slideshowUp()">Next</A> 
+          </CENTER>
+        </div>
+        
 
       </div>
     </div>
