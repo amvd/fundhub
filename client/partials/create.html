@@ -1,21 +1,46 @@
 <div ng-controller="ProjectsController">
-	<h3>Create a campaign</h3>
-		<p>Company Name* : <input type="text" name="company_name" ng-model='newProject.name'></p>
-		<p>Company Logo : <input type="file" name="logo" alt="Company logo" ng-model='newProject.logo'></p>
-		<p>Company Location : 	<select ng-model='newProject.location'>
-									<option>India</option>
-									<option>USA</option>
-								</select>
-		</p>
-	<h3>Project Details</h3>
-		<p>Project video: <input type="file" name="project_video" ng-model='newProject.project_video'></p>
+<div class="container">
+	<h1 style="color: #FF3333;">Create a campaign</h1>
+	<h2>Company details</h2>
+
+	<div class="row">
+	  <form class="col s12">
+	    <div class="row">
+	      <div class="input-field col s4">
+	        <input id="company_name" type="text" class="validate" ng-model='newProject.name'>
+	        <label for="company_name">Company Name*</label>
+	      </div>
+	      <div class="input-field col s4">
+	        <!-- <label>Company location</label> -->
+			  <select class="browser-default">
+			    <option value="" disabled selected>Select your company's location</option>
+			    <option value="India">India</option>
+			    <option value="USA">USA</option>
+			  </select>
+	      </div>
+	      <div class="row">
+	      <div class="input-field col s12">
+	        <p>Company logo <input type="file" class="btn" ng-model='newProject.logo'></p>
+	      </div>
+	    </div>
+		</div>
+	 </form>
+	</div>
+
+	<h2>Project Details</h2>
 		<p>Project Title : <input type="text" name="name" name="title" ng-model='newProject.project_title'></p>
 		<p>Project Description : <input type="text" name="name" name="description" ng-model='newProject.project_description'></p>
+		<div class="row">
+	      <div class="input-field col s4">
+	        <p>Project video<input type="file" class="btn" ng-model='newProject.project_video'></p>
+	      </div>
+	    </div>
+	
 	<h3>Investment details</h3>
-		<p><a href="#/">Fundraise details</a></p>
 		<p>Fundraising Goal : <input type="text" name="name" name="goal" ng-model='newProject.project_goal'></p>
 		<p>Minimum Investment Amount : <input type="text" name="name" name="min_investment" ng-model='newProject.project_minimum_investment'></p>
-		<p>Deadline : <input type="date" name="name" name="deadline" ng-model='newProject.project_deadline'></p>
+		<p>Deadline : <input type="date" name="name" class="datepicker" name="deadline" ng-model='newProject.project_deadline'></p>
+		
 	<h3>Pitch Content</h3>
 		<p>Impress your investors here. This will be featured at the top of your deal.</p>
 		<p>#1. <input type="text" name="highlighter_1" placeholder="One liner" ng-model='newProject.project_highlight1'></p>
@@ -23,12 +48,29 @@
 		<p>#3. <input type="text" name="highlighter_3" placeholder="One liner" ng-model='newProject.project_highlight3'></p>
 	<h3>Elevator Pitch</h3>
 		<p><input type="text" name="elevator_pitch" placeholder="200 characters" ng-model='newProject.project_elevator'></p>
+
+
 	<h3>Deal Documents</h3>
-		<p>Executive Summary: <input type="file" name="executive_summary" ng-model='newProject.project_executive_summary'></p>
-		<p>Term Sheet: <input type="file" name="term_sheet" ng-model='newProject.project_term_sheet'></p>
-		<p>Legal information you should be aware of </p>
+		<div class="row">
+	      <div class="input-field col s6">
+	        <p>Executive Summary: <input type="file" class="btn" ng-model='newProject.project_executive_summary'></p>
+	      </div>
+	      <div class="input-field col s6">
+	        <p>Term Sheet: <input type="file" class="btn" ng-model='newProject.project_term_sheet'></p>
+	      </div>
+	    </div>
+		<h3>Legal information you should be aware of </h3>
 		<p>Lorem ipsum</p>
-		<p><input type="checkbox"> I agree to the terms and conditions</p>
+		<p>Lorem ipsum</p>
+		&nbsp;
+		<form action="#">
+		  <p>
+		    <input type="checkbox" id="checkbox" />
+		    <label for="checkbox">I agree to the terms and conditions</label>
+		  </p>
+		</form>
+		&nbsp;
 	<a href="#/success"><input type="submit" ng-click="createProject()" value="Submit for Review" class="btn-primary"></a>
 	<a href="#/home"><input type="submit" value="Cancel" class="btn-primary"></a>
+	</div>
 </div>

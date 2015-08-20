@@ -1,0 +1,9 @@
+<div ng-controller="ProjectsController">
+	<div ng-repeat="project in projects" style="width: 30%; height: 40%; border: 1px solid #FF3333;">
+		{{ project.logo }}
+		<p>{{ project.name }}</p>
+		<p>{{ project.project_title }}</p>
+		<p>{{ project.project_description }}</p>
+		<p><a href="#/company/{{ project.id }}">Invest</a></p>
+	</div>
+</div>

@@ -37,7 +37,7 @@
               <IMG SRC="./../static/information.jpg" NAME="mypic" BORDER=0 HEIGHT="400" WIDTH="100%">
 
               <FORM NAME="joe">
-                <INPUT TYPE="text" WIDTH="350" NAME="burns" VALUE="Stand out">
+                <p><INPUT TYPE="text" WIDTH="350" NAME="burns" VALUE="Stand out" style="text-align: center;"></p>
               </FORM>
 
               <A HREF="JavaScript:slideshowBack()">Back</A>
@@ -89,7 +89,7 @@
                 <p>{{ project.project_description_1 }}</p> 
  
                 <br><br>
-                <a href="#/all_projects"><button class="btn btn-default">More</button></a>
+                <a href="#/all_projects"><button class="btn btn-default" ng-click="allProject()">More</button></a>
             <!-- </div> -->
 
                 <!--  -->
@@ -117,7 +117,7 @@
                 <p>{{ project.project_description_recent_1 }}</p> 
  
                 <br><br>
-                <a href="#/all_projects"><button class="btn btn-default">More</button></a>
+                <a href="#/all_projects"><button class="btn btn-default" ng-click="allProject()">More</button></a>
               </div>
         </div> 
     </div>
