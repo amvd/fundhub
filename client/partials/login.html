@@ -1,5 +1,5 @@
 <div ng-controller="RegisterController">
-  <form name="myForm" novalidate>
+<!--   <form name="myForm" novalidate>
 
   <p>Email:<br>
     <input type="email" name="email" ng-model="registerUser.email" required="">
@@ -17,4 +17,21 @@
   
   <input type ="submit" ng-disabled="myForm.email.$dirty && myForm.email.$invalid || myForm.password.$dirty && myForm.password.$invalid"><br/>
 </form>
-</div>
+</div> -->
+
+<div class="container">
+      <form class="form-signin" style="    max-width: 330px;padding: 15px;margin: 0 auto;">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" ng-model="registerUser.email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" ng-model="registerUser.password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div>
+  </div>

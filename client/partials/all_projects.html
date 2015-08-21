@@ -1,4 +1,11 @@
 <div ng-controller="ProjectsController">
+  <div class="row">
+        <div style="background-image: url(../static/images/bg-browse.jpg); height:360px;background-size: cover; background-position: center; text-align: center;">
+            <div class="container">
+              <a class="btn btn-primary btn-lg" style="margin-top: 10%; background-color:#fe951b;border-color: #fe951b" href="#" role="button">EXPLORE ALL OUR PROJECTS »</a>
+            </div>
+        </div>
+      </div>
 	<div ng-repeat="project in projects" style="width: 30%; height: 40%; border: 1px solid #FF3333;">
 		{{ project.logo }}
 		<p>{{ project.name }}</p>

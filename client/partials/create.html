@@ -1,34 +1,33 @@
 <div ng-controller="CompaniesController">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+		  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 <div class="container">
-	<h1 style="color: #FF3333;">Create a campaign</h1>
-	
-	<h2>Account Info</h2>
+	<h3>Start your campaign</h3>
+	<h5>Raise Funds for your next Big Idea !</h5>
 
+	<h4>Account Info</h4>
 	<div class="row">
 	  <form class="col s12">
 	    <div class="row">
 	      <div class="input-field col s4">
-	        <input id="email_address" type="email" class="validate" ng-model='newCompany.email'>
-	        <label for="email_address">Email Address</label>
+	        <p>Email Address</p><input id="email_address" type="email" class="validate" ng-model='newCompany.email'>
+	        
 	      </div>
 	      <div class="input-field col s4">
-	        <input id="password" type="password" class="validate" ng-model='newCompany.password'>
-	        <label for="password">Account Password</label>
+	        <p>Account Password</p><input id="password" type="password" class="validate" ng-model='newCompany.password'>
 	      </div>
 	      
 	 </form>
 	</div>
 
 
-	<h2>Company details</h2>
+	<h4>Company details</h4>
 
 	<div class="row">
 	  <form class="col s12">
 	    <div class="row">
 	      <div class="input-field col s4">
-	        <input id="company_name" type="text" class="validate" ng-model='newProject.name'>
-
-	        <label for="company_name">Company Name*</label>
+	        <p>Company Name*</p><input id="company_name" type="text" class="validate" ng-model='newProject.name'>
 	      </div>
 	      <div class="input-field col s4">
 	        <!-- <label>Company location</label> -->
@@ -49,7 +48,7 @@
 	 </form>
 	</div>
 
-	<h2>Project Details</h2>
+	<h4>Project Details</h4>
 		<p>Project Title : <input type="text" name="name" name="title" ng-model='newCompany.project_title'></p>
 		<p>Project Description : <input type="text" name="name" name="description" ng-model='newCompany.project_description'></p>
 		<div class="row">
@@ -58,21 +57,21 @@
 	      </div>
 	    </div>
 	
-	<h3>Investment details</h3>
+	<h4>Investment details</h4>
 		<p>Fundraising Goal : <input type="text" name="name" name="goal" ng-model='newCompany.project_goal'></p>
 		<p>Minimum Investment Amount : <input type="text" name="name" name="min_investment" ng-model='newCompany.project_minimum_investment'></p>
 		<p>Deadline : <input type="date" name="name" class="datepicker" name="deadline" ng-model='newCompany.project_deadline'></p>
 		
-	<h3>Pitch Content</h3>
+	<h4>Pitch Content</h4>
 		<p>Impress your investors here. This will be featured at the top of your deal.</p>
 		<p>#1. <input type="text" name="highlighter_1" placeholder="One liner" ng-model='newCompany.project_highlight1'></p>
 		<p>#2. <input type="text" name="highlighter_2" placeholder="One liner" ng-model='newCompany.project_highlight2'></p>
 		<p>#3. <input type="text" name="highlighter_3" placeholder="One liner" ng-model='newCompany.project_highlight3'></p>
-	<h3>Elevator Pitch</h3>
+	<h4>Elevator Pitch</h4>
 		<p><input type="text" name="elevator_pitch" placeholder="200 characters" ng-model='newCompany.project_elevator'></p>
 
 
-	<h3>Deal Documents</h3>
+	<h4>Deal Documents</h4>
 		<div class="row">
 	      <div class="input-field col s6">
 	        <p>Executive Summary: <input type="file" class="btn" ng-model='newCompany.project_executive_summary'></p>
@@ -81,7 +80,7 @@
 	        <p>Term Sheet: <input type="file" class="btn" ng-model='newCompany.project_term_sheet'></p>
 	      </div>
 	    </div>
-		<h3>Legal information you should be aware of </h3>
+		<h4>Legal information you should be aware of </h4>
 		<p>Lorem ipsum</p>
 		<p>Lorem ipsum</p>
 		&nbsp;
@@ -95,4 +94,5 @@
 	<a href="#/success"><input type="submit" ng-click="createCompany()" value="Submit for Review" class="btn-primary"></a>
 	<a href="#/home"><input type="submit" value="Cancel" class="btn-primary"></a>
 	</div>
+</div>
 </div>

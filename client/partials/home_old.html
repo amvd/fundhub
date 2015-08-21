@@ -1,0 +1,135 @@
+<div ng-controller="UsersController">
+
+    <div id="container" style="width: 100%;">
+
+        <header class="masthead">
+            <div class="container">
+              <div class="row">
+                <div class="col col-sm-6">
+                  <h1><a href="#/home"><h1 style="color: #FF3333;">FundHub</h1></a>
+                    <p class="lead">Dreams in Motion</p></h1>
+                </div>
+                <div class="col col-sm-6">
+                  <div class="well pull-right">
+                    <img src="./static/logo.jpg" alt="fundhub_logo" style="heigth:100px; width:75px;">    
+                  </div>
+                </div>
+                
+              </div>
+              </div>
+        </header>
+    </div>
+
+  <div class="container">
+  <div class="row">
+      <div class="col col-sm-12">
+        
+        <div class="panel">
+        <div class="panel-body">
+          We help people dream together  <span class="glyphicon glyphicon-heart-empty"></span>
+        </div>
+        </div>
+        
+        <div id="slideshow" style="heigth:400px; width: 100%;">
+
+
+          <CENTER>
+              <IMG SRC="./../static/information.jpg" NAME="mypic" BORDER=0 HEIGHT="400" WIDTH="100%">
+
+              <FORM NAME="joe">
+                <p><INPUT TYPE="text" WIDTH="350" NAME="burns" VALUE="Stand out" style="text-align: center;"></p>
+              </FORM>
+
+              <A HREF="JavaScript:slideshowBack()">Back</A>
+              <A HREF="JavaScript:slideshowUp()">Next</A> 
+          </CENTER>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Begin Body -->
+<div class="container">
+  <div class="row">
+        <div class="col col-sm-3">
+                <div id="sidebar">
+            <ul class="nav nav-stacked">
+                    <li><h3 class="highlight" style="color: #FF3333;">Channels <i class="glyphicon glyphicon-dashboard pull-right"></i></h3></li>
+                    <li><a href="#/about_us">About Us</a></li>
+                <li><a href="#/contact_us">Contact Us</a></li>
+                <li><a href="#/faq">FAQ</a></li>
+                <li><a href="#/security">Security</a></li>
+                <li><a href="#/developers">Developers</a></li>
+        </ul>
+               </div>
+          </div>  
+          <div class="col col-sm-9">
+              <div class="panel">
+              <!-- <div ng-repeat="project in projects"> -->
+              <h1>Popular projects</h1>
+              
+
+
+                <div class="row">
+                  <div class="col col-sm-8">
+                    <img src="./../static/{{ popular[0].logoUrl }}" alt="popular project image 1" class="img-responsive">
+                    <h4 ng-bind="popular[0].title"></h2>
+                  </div> 
+              <div class="col col-sm-4">
+                    <img src="/../static/{{ popular[1].logoUrl }}" alt="image_2" class="img-responsive">
+                    <h4 ng-bind="popular[1].title"></h4>
+            <p ng-bind="popular[1].descriptives.description"></p> 
+                    <hr>
+                    <img src="/../static/{{ popular[2].logoUrl }}" alt="image_3" class="img-responsive">
+                    <h4 ng-bind="popular[2].title"></h4>
+            <p ng-bind="popular[2].descriptives.description"></p> 
+                  </div>   
+                </div>
+        
+                <h2>{{ project.project_title_1 }}</h2>
+                <p>{{ project.project_description_1 }}</p> 
+ 
+                <br><br>
+                <a href="#/all_projects"><button class="btn btn-default" ng-click="allProject()">More</button></a>
+            <!-- </div> -->
+
+                <!--  -->
+
+                <hr>
+                
+                  <h1>Recently funded projects</h1>
+              
+                <div class="row">
+                  <div class="col col-sm-8">
+                    <img src="./../static/{{ recent[0].logo }}" alt="recently funded project image 1" class="img-responsive">
+                    <p ng-bind="recent[0].descriptives.description"></p>
+                  </div> 
+              <div class="col col-sm-4">
+                    <img src="/../static/{{ recent[1].logo }}" alt="image_2" class="img-responsive">
+                    <h4 ng-bind="recent[1].title"></h4>
+            <p ng-bind="recent[1].descriptives.description"></p> 
+                    <hr>
+                    <img src="/../static/{{ recent[2].logo }}" alt="image_3" class="img-responsive">
+                    <h4 ng-bind="recent[2].title"></h4>
+            <p ng-bind="recent[2].descriptives.description"></p> 
+                  </div>   
+                </div>
+        
+                <h2>{{ project.project_title_recent_1 }}</h2>
+                <p>{{ project.project_description_recent_1 }}</p> 
+ 
+                <br><br>
+                <a href="#/all_projects"><button class="btn btn-default" ng-click="allProject()">More</button></a>
+              </div>
+        </div> 
+    </div>
+</div>
+
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</div>	

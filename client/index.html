@@ -1,227 +1,200 @@
 <!DOCTYPE html>
 <html ng-app="project_app">
 <head>
-	<title>FundHub</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Bootstrap 3 Template / Theme - Flathood</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css">
-		<link href="css/styles.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
-	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.2/angular-local-storage.js"></script>
-	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Fundhub">
+    <meta name="author" content="Fundhub">
+    <title>FundHub- Your one stop crowd funding website</title>
+    <link href="./../static/css/carousel.css">
 
-	  	<script type="text/javascript">
-			var num=1
-			img1 = new Image ()
-			img1.src = "./static/information.jpg"
-			img2 = new Image ()
-			img2.src = "./static/interference.jpg"
-			img3 = new Image ()
-			img3.src = "./static/message.jpg"
-			img4 = new Image ()
-			img4.src = "./static/nervous.jpg" 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
 
-			text1 = "Stand out"
-			text2 = "Connecting the dots"
-			text3 = "We build teams"
-			text4 = "We are different"
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.2/angular-local-storage.js"></script>
 
-			function slideshowUp()
-			{
-				num=num+1
-				if (num==5)
-				{num=1}
-				document.mypic.src=eval("img"+num+".src")
-				document.joe.burns.value=eval("text"+num)
-			}
+      <script type="text/javascript">
 
-			function slideshowBack()
-			{
-				num=num-1
-				if (num==0)
-				{num=4}
-				document.mypic.src=eval("img"+num+".src")
-				document.joe.burns.value=eval("text"+num)
-			}
-		</script>
+      var myApp = angular.module('project_app', ['ngRoute', 'LocalStorageModule']);
+      myApp.config(function($routeProvider)
+        {
+         $routeProvider
+          .when('/home',{
+                templateUrl: './../partials/home.html',
+                css: './../static/css/carousel.css'
+            })
+            .when('/register',{
+                templateUrl: './../partials/register.html'
+            })
+            .when('/login',{
+                templateUrl: './../partials/login.html'
+            })
+            .when('/success',{
+                templateUrl: './../partials/success.html'
+            })
+            .when('/all_projects',{
+                templateUrl: './../partials/all_projects.html'
+            })
+            .when('/contact_us',{
+                templateUrl: './../partials/contact_us.html'
+            })
+            .when('/about_us',{
+                templateUrl: './../partials/about_us.html'
+            })
+            .when('/faq',{
+                templateUrl: './../partials/faq.html'
+            })
+            .when('/security',{
+                templateUrl: './../partials/security.html'
+            })
+            .when('/raise_funds',{
+                templateUrl: './../partials/create.html'
+            })
+            .when('/explore',{
+                templateUrl: './../partials/explore.html'
+            })
+            .when('/what_is_fundhub',{
+                templateUrl: './../partials/what_is_fundhub.html'
+            })
+            .when('/developers',{
+                templateUrl: './../partials/developers.html'
+            })
+            .when('/company/:companyId',{
+                templateUrl: './../partials/company.html',
+                controller: 'CompaniesController'
+            })
+            .when('/user/signup',{
+                templateUrl: './../partials/login.html',
+                controller: 'UsersController'
+                })
+            .when('/invest/:companyId',{
+                templateUrl: './../partials/invest.html',
+                controller: 'CompaniesController'
+            })
+            .otherwise({
+              templateUrl: './../partials/home.html'
+            });
+          })
 
-	  	<script type="text/javascript">
+    myApp.factory('UsersFactory', function($http, localStorageService) {
+          var factory = {};
+          var users = [];
 
-			var myApp = angular.module('project_app', ['ngRoute', 'LocalStorageModule']);
-			myApp.config(function($routeProvider)
-			  {
-			   $routeProvider
-			 	  .when('/home',{
-			          templateUrl: './../partials/home.html'
-			      })
-			      .when('/register',{
-			          templateUrl: './../partials/register.html'
-			      })
-			      .when('/login',{
-			          templateUrl: './../partials/login.html'
-			      })
-			      .when('/success',{
-			          templateUrl: './../partials/success.html'
-			      })
-			      .when('/all_projects',{
-			          templateUrl: './../partials/all_projects.html'
-			      })
-			      .when('/contact_us',{
-			          templateUrl: './../partials/contact_us.html'
-			      })
-			      .when('/about_us',{
-			          templateUrl: './../partials/about_us.html'
-			      })
-			      .when('/faq',{
-			          templateUrl: './../partials/faq.html'
-			      })
-			      .when('/security',{
-			          templateUrl: './../partials/security.html'
-			      })
-			      .when('/raise_funds',{
-			          templateUrl: './../partials/create.html'
-			      })
-			      .when('/explore',{
-			          templateUrl: './../partials/explore.html'
-			      })
-			      .when('/what_is_fundhub',{
-			          templateUrl: './../partials/what_is_fundhub.html'
-			      })
-			      .when('/developers',{
-			          templateUrl: './../partials/developers.html'
-			      })
-			      .when('/company/:companyId',{
-			          templateUrl: './../partials/company.html',
-			          controller: 'CompaniesController'
-			      })
-			      .when('/user/signup',{
-			          templateUrl: './../partials/login.html',
-			          controller: 'UsersController'
-			          })
-			      .when('/invest/:companyId',{
-			          templateUrl: './../partials/invest.html',
-			          controller: 'CompaniesController'
-			      })
-			      .otherwise({
-			        templateUrl: './../partials/home.html'
-			      });
-			    })
+          factory.get_one_company = function(id, callback) {
+              $http.get('/show_a_company/' + id).success(function(output) {
+              company = output;
+              callback(company);
+              });
+          },
 
-		myApp.factory('UsersFactory', function($http, localStorageService) {
-	        var factory = {};
-	        var users = [];
+          factory.createCompany = function(info, callback) { //create project
 
-	        factory.get_one_company = function(id, callback) {
-	            $http.get('/show_a_company/' + id).success(function(output) {
-	            company = output;
-	            callback(company);
-	            });
-	        },
+              $http.post('/createCompany', info).success(function() {
+                // users.push({
+                  //  });    
+                // callback(users);
+              });
 
-	        factory.createCompany = function(info, callback) { //create project
+          }
 
-	            $http.post('/createCompany', info).success(function() {
-	            	// users.push({
-	         				// 	});    
-	            	// callback(users);
-	          	});
+           factory.getPopularCompanies = function(callback) {
+              $http.get('/getPopularCompanies').success(function(output) {
+                users = output;
+                callback(users);
+              });
+          }
 
-	        }
+          // factory.getUsers = function(callback) {
 
-	         factory.getPopularCompanies = function(callback) {
-	            $http.get('/getPopularCompanies').success(function(output) {
-		            users = output;
-		            callback(users);
-	            });
-        	}
+          // }
 
-        	// factory.getUsers = function(callback) {
-
-        	// }
-
-        	factory.getRecentlyFunded = function(callback) {
-	            $http.get('/getRecentlyFunded').success(function(output) {
-		            users = output;
-		            callback(users);
-	            });
-        	}
-        	factory.register = function(info, callback) {
-        		console.log("in the factory");
-	        	$http.post('/signup', info).success(function(response){
+          factory.getRecentlyFunded = function(callback) {
+              $http.get('/getRecentlyFunded').success(function(output) {
+                users = output;
+                callback(users);
+              });
+          }
+          factory.register = function(info, callback) {
+            console.log("in the factory");
+            $http.post('/signup', info).success(function(response){
               callback(response);
             })
-        	}
+          }
 
-        	factory.investment = function(info, callback) {
-	            $http.post('/investment', info).success(function() {
-	            users.push({                       
-	                       });    
-	            callback(users);
-	          });
-	         }
+          factory.investment = function(info, callback) {
+              $http.post('/investment', info).success(function() {
+              users.push({                       
+                         });    
+              callback(users);
+            });
+           }
 
-	     return factory
+       return factory
         });
-	  	</script>
+      </script>
 
 
-	  	<script type="text/javascript" src="client_controllers.js"></script>
-	  	<script type="text/javascript" src="login.js"></script>
-
-
+      <script type="text/javascript" src="client_controllers.js"></script>
+      <script type="text/javascript" src="login.js"></script>
 </head>
-<body style="background-color: #F4F8FB;">
-<nav class="navbar navbar-static" style="background-color: #FF3333;">
-    <div class="container">
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="glyphicon glyphicon-chevron-down"></span>
-      </a>
-	      <div class="nav-collapse collase">
-	        <ul class="nav navbar-nav">  
-	          <li><a href="#/home"><h2 style="color: black;">Home</h2></a></li>
-	          <li><a href="#/raise_funds"><h2 style="color: black;">Raise funds</h2></a></li>
-	          <li><a href="#/all_projects"><h2 style="color: black;">Explore</h2></a></li>
-	          <li><a href="#/what_is_fundhub"><h2 style="color: black;">What is FundHub</h2></a></li>
-	          <li><a href="#/company_login"><h2 style="color: black;">Company Login</h2></a></li>
-	          <li><a href="#/login"><h2 style="color: black;">Investors</h2></a></li>
-	        </ul>
-	        <ul class="nav navbar-right navbar-nav">
-	          <li class="dropdown">
-	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-	            <ul class="dropdown-menu" style="padding:12px;">
-	                <form class="form-inline">
-	                   <div class="input-group">
-	                     <input type="text" class="form-control" placeholder="Search">
-	                     <div class="input-group-btn">
-	     			       <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-	                     </div>
-	                  </div>
-	                </form>
-	              </ul>
-	          </li>
-	          <li class="dropdown">
-<!-- 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
- -->	            <ul class="dropdown-menu">
-	              <li><a href="#/login">Login</a></li>
-	              <li><a href="#">Profile</a></li>
-	              <li class="divider"></li>
-	              <li><a href="#/about_us">About</a></li>
-	             </ul>
-	          </li>  
-	        </ul>
-	      </div>		
+<body>
+   <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#/home" class="navbar-brand">FundHub</a>
     </div>
-</nav><!-- /.navbar -->
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#/raise_funds">Raise Funds</a>
+        </li>
+        <li>
+          <a href="#/all_projects">Explore</a>
+        </li>
+        <li>
+          <a href="#/what_is_fundhub">What is FundHub</a>
+        </li>
 
-<div ng-view=""></div>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/company_login">Company Login</a></li>
+        <li><a href="#/login">Investors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <div ng-view=""></div>
 
-	</body>
+  <!-- FOOTER -->
+  <div class="container marketing">
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2014 Fundhub, Inc. &middot; <a href="#/about_us">About Us</a> &middot; <a href="#/contact_us">Contact Us</a>&middot; <a href="#/faq">FAQ</a> &middot; <a href="#/security">Security</a> &middot; <a href="#/developers">Developers</a> </p>
+    </footer>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
 </html>
