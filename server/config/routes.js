@@ -13,15 +13,15 @@ module.exports = function(app){
 	});
 
 	app.post("/create", function(req,res){
-		Projects.create(req, res);
+		Companies.create(req, res);
 	});
 
-	app.get("/getPopularProjects", function(req, res){
-		Projects.findPopular(req,res);
+	app.get("/getPopularCompanies", function(req, res){
+		Companies.findPopular(req,res);
 	});
 
 	app.get("/getRecentlyFunded", function(req, res){
-		Projects.findRecent(req,res);
+		Companies.findRecent(req,res);
 	});
 
 	app.post("/createCompany", function(req, res){

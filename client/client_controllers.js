@@ -1,11 +1,11 @@
 myApp.controller('UsersController', function($scope, UsersFactory) {
-	        UsersFactory.getPopularProjects(function(data) {
+	        UsersFactory.getPopularCompanies(function(data) {
 
 	        $scope.popular = data;
 	        });
 
 	        UsersFactory.getRecentlyFunded(function(output) {
-	        $scope.recent_funded = output;
+	        $scope.recent = output;
 	        });
     	});
 

@@ -133,8 +133,8 @@
 
 	        }
 
-	         factory.getPopularProjects = function(callback) {
-	            $http.get('/getPopularProjects').success(function(output) {
+	         factory.getPopularCompanies = function(callback) {
+	            $http.get('/getPopularCompanies').success(function(output) {
 		            users = output;
 		            callback(users);
 	            });
