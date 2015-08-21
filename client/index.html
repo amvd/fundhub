@@ -131,9 +131,16 @@
           // }
 
           factory.getRecentlyFunded = function(callback) {
-              $http.get('/getRecentlyFunded').success(function(output) {
-                users = output;
-                callback(users);
+              $http.get('/getRecentlyFunded').success(function(companies) {
+                var recent = [];
+                var now = new Date();
+                for(var company in companies){
+                	if(company.closingDate < now){
+                		recent.push(company);
+                	}
+                }
+
+                callback(recent);
               });
           }
           factory.register = function(info, callback) {

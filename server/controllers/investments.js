@@ -4,7 +4,7 @@ var Investments = mongoose.model("Investments");
 
 var Investors = mongoose.model("Investors");
 
-var Projects = mongoose.model("Projects");
+var Companies = mongoose.model("Companies");
 
 module.exports = (function(){
 	return {
@@ -18,19 +18,20 @@ module.exports = (function(){
 					console.log("DING find investor, errors:", err);
 				} else {
 					console.log("DING find investor:", investor);
-					Projects.findOne({_id: req.body.projectId}, function(err, project){
+					Companies.findOne({_id: req.body.projectId}, function(err, company){
 							if (err){
-								console.log("DING find project, errors:", err);
+								console.log("DING find company, errors:", err);
 							} else {
-								console.log("DING find project:", project);
+								console.log("DING find company:", project);
 								investor.investments.push(investment);
-								project.investments.push(investment);
+								company.investments.push(investment);
+								company.currentTotal += investment.amount;
 
 								investment.save(function(err, result){
 									if(err){
 										console.log("Something went wrong with saving the investment to db.");
 									} else {
-										project.save(function(err){
+										company.save(function(err){
 											if(err){
 												console.log("Something went wrong saving the project to db.");
 											} else {
