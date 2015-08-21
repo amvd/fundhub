@@ -1,11 +1,11 @@
 <div ng-controller="CompaniesController" style="width: 1000px;">
-	
+	<div class="container">
 	<div>
 		<div style="width: 650px; display: inline-block;">
-			<img src="./../static/{{company.logoUrl}}" alt="company logo" >
+			<img src="./../static/images/small_img/{{company.logoUrl}}" alt="company logo" >
 			<h1 style="color: #FF3333;">{{ company.name }}</h1> 
 			<p>{{ company.title }}</p> 
-			<img src="./../static/{{company.media.imageUrl}}.jpg" alt="company logo" style="width: 500px; height: 250px;">
+			<img src="./../static/images/small_img/{{company.media.imageUrl}}" alt="Photo" style="width: 500px; height: 250px;">
 		</div>
 
 		<div style="width: 300px; display: inline-block;">
@@ -50,4 +50,5 @@
 			<a href="">Investor Pitch Deck-2</a>
 		</div>
 	</div>
-</div>	
+</div>
+</div>
