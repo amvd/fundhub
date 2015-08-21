@@ -107,6 +107,12 @@
 
           }
 
+          factory.getCompanies = function(callback){
+          	$http.get("/getCompanies").success(function(companies){
+          		callback(companies);
+          	})
+          }
+
            factory.getPopularCompanies = function(callback) {
               $http.get('/getPopularCompanies').success(function(output) {
                 users = output;

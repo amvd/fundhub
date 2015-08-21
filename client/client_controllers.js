@@ -20,6 +20,10 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     	$scope.company = data;
     });
 
+    UsersFactory.getCompanies(function(companies){
+    	$scope.companies = companies;
+    });
+
     $scope.investment = function() {
 	          UsersFactory.investment($scope.newInvestment, function() {
 	            UserssFactory.get_one_company(id, function(data) {

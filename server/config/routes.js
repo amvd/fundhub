@@ -13,6 +13,11 @@ module.exports = function(app){
 		Companies.readOne(req,res);
 	});
 
+	app.get("/getCompanies", function(req,res){
+		console.log("DING routes getCompanies");
+		Companies.read(req,res);
+	})
+
 	app.post("/create", function(req,res){
 		Companies.create(req, res);
 	});

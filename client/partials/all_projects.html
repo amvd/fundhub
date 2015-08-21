@@ -1,15 +1,15 @@
-<div ng-controller="ProjectsController">
+<div ng-controller="CompaniesController">
   <div class="row">
         <div style="background-image: url(../static/images/bg-browse.jpg); height:360px;background-size: cover; background-position: center; text-align: center;">
             <div class="container">
               <a class="btn btn-primary btn-lg" style="margin-top: 10%; background-color:#fe951b;border-color: #fe951b" href="#/all_projects" role="button">EXPLORE ALL OUR PROJECTS »</a>
             </divs        </div>
       </div>
-	<div ng-repeat="project in projects" style="width: 30%; height: 40%; border: 1px solid #FF3333;">
-		{{ project.logo }}
-		<p>{{ project.name }}</p>
-		<p>{{ project.project_title }}</p>
-		<p>{{ project.project_description }}</p>
-		<p><a href="#/company/{{ project.id }}">Invest</a></p>
+	<div ng-repeat="company in companies" style="width: 30%; height: 40%; border: 1px solid #FF3333;">
+		<img src="../static/{{company.logoUrl}}" alt="company logo">
+		<p>{{ company.name }}</p>
+		<p>{{ company.title }}</p>
+		<p>{{ company.descriptives.description }}</p>
+		<p><a href="#/company/{{ company._id }}">Invest</a></p>
 	</div>
 </div>
