@@ -17,7 +17,7 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     // });
 
     UsersFactory.get_one_company(id, function(data) {
-    $scope.companies = data;
+    	$scope.company = data;
     });
 
     $scope.investment = function() {
