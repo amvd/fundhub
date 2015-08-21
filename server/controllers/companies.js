@@ -17,9 +17,9 @@ module.exports = (function(){
 				location: input.location,
 				title: input.project_title,
 				closingDate: input.project_deadline,
-				category: input.category, // needs to be made
+				//category: input.category, // needs to be made (not made)
 				media: {
-					imageUrl: input.image, // needs to be made
+					imageUrl: input.image, // needs to be made (made)
 					videoUrl: input.project_video
 				},
 				descriptives: {
