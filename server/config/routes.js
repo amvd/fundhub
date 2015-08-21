@@ -13,6 +13,11 @@ module.exports = function(app){
 		Companies.readOne(req,res);
 	});
 
+	app.get("/getCompanies", function(req,res){
+		console.log("DING routes getCompanies");
+		Companies.read(req,res);
+	})
+
 	app.post("/create", function(req,res){
 		Companies.create(req, res);
 	});
@@ -34,5 +39,10 @@ module.exports = function(app){
 		console.log("I'm in routes", req.body);
 		Investors.create()
 	});
+
+	app.get("/getInvestments/:id", function(req,res){
+		console.log("DING routes get getInvestments");
+		Companies.readInvestments(req,res);
+	})
 
 }
