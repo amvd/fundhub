@@ -4,7 +4,7 @@ var Investments = require("../controllers/investments.js");
 
 var Investors = require("../controllers/investors.js");
 
-var Projects = require("../controllers/projects.js");
+// var Projects = require("../controllers/projects.js");
 
 module.exports = function(app){
 
@@ -24,12 +24,14 @@ module.exports = function(app){
 		Projects.findRecent(req,res);
 	});
 
-	app.get("/createCompany", function(req, res){
+	app.post("/createCompany", function(req, res){
+		console.log("DING routes post createCompany");
 		Companies.create(req,res);
 	});
 
 	app.post("/signup", function(req, res){
 		console.log("I'm in routes", req.body);
+		Investors.create()
 	});
 
 }

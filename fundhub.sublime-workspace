@@ -1,0 +1,1096 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"SVG",
+				"svgW"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"chef",
+				"chef_data"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"date_default",
+				"date_default_timezone_set"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/config/routes.js",
+			"settings":
+			{
+				"buffer_size": 798,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/client_controllers.js",
+			"settings":
+			{
+				"buffer_size": 1501,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/login.js",
+			"settings":
+			{
+				"buffer_size": 305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/index.html",
+			"settings":
+			{
+				"buffer_size": 7734,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/create.html",
+			"settings":
+			{
+				"buffer_size": 3276,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/home.html",
+			"settings":
+			{
+				"buffer_size": 4959,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/company.html",
+			"settings":
+			{
+				"buffer_size": 1772,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/success.html",
+			"settings":
+			{
+				"buffer_size": 354,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/login.html",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/partials/register.html",
+			"settings":
+			{
+				"buffer_size": 1878,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/models/investment.js",
+			"settings":
+			{
+				"buffer_size": 349,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/models/company.js",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/models/project.js",
+			"settings":
+			{
+				"buffer_size": 644,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/models/investor.js",
+			"settings":
+			{
+				"buffer_size": 347,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/controllers/companies.js",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/controllers/investments.js",
+			"settings":
+			{
+				"buffer_size": 2397,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/controllers/investors.js",
+			"settings":
+			{
+				"buffer_size": 872,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/controllers/projects.js",
+			"settings":
+			{
+				"buffer_size": 2355,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 500.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 677.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"Package Control: Install Package"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/client",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/client/partials",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/server",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/server/config",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/server/controllers",
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/server/models"
+	],
+	"file_history":
+	[
+		"/C/SYNC/Dropbox/7 CODING/projects/fundhub/server/models/investment.js",
+		"/C/SYNC/Dropbox/7 CODING/JS/MongoDB/mongoose_dashboard/.gitignore",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/datajs.sublime-snippet",
+		"/C/SYNC/Dropbox/7 CODING/JS/d3/first_project/index.html",
+		"/C/SYNC/Dropbox/7 CODING/JS/d3/first_project/index.js",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/epic_button_game/server.js",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/Game/package.json",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/chatroom/package.json",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/Pacman/package.json",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/chatroom/static/css/index.css",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/chatroom/server.js",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/chatroom/views/index.ejs",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/epic_button_game/views/index.ejs",
+		"/C/SYNC/Dropbox/7 CODING/JS/NODE/SOCKET.IO/epic_button_game/package.json",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/bootjs.sublime-snippet",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/bootcss.sublime-snippet",
+		"/C/SYNC/GitHub/JAMM/application/models/user.php",
+		"/C/SYNC/GitHub/JAMM/application/views/cart.php",
+		"/C/SYNC/GitHub/JAMM/application/controllers/users.php",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_edit_profile.php",
+		"/C/SYNC/GitHub/JAMM/application/controllers/chefs.php",
+		"/C/SYNC/GitHub/JAMM/application/models/chef.php",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_profile.php",
+		"/C/SYNC/GitHub/JAMM/application/views/user_profile.php",
+		"/C/SYNC/GitHub/JAMM/application/views/user_edit_profile.php",
+		"/C/SYNC/GitHub/JAMM/application/config/config.php",
+		"/C/SYNC/Dropbox/7 CODING/JAMM local/application/config/config.php",
+		"/C/SYNC/GitHub/JAMM/application/views/login_reg.php",
+		"/C/SYNC/GitHub/JAMM/application/config/database.php",
+		"/C/SYNC/GitHub/JAMM/.htaccess",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_edit_profile",
+		"/C/SYNC/Dropbox/7 CODING/JAMM local/application/views/all_food.php",
+		"/C/Users/Armand/Desktop/maps test.html",
+		"/C/SYNC/GitHub/JAMM/application/views/testmaps.php",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_menu.php",
+		"/C/SYNC/GitHub/JAMM/application/views/all_food.php",
+		"/C/SYNC/GitHub/JAMM/application/views/index.php",
+		"/C/SYNC/GitHub/JAMM/application/controllers/foods.php",
+		"/C/SYNC/GitHub/JAMM/application/models/food.php",
+		"/C/SYNC/GitHub/JAMM/application/views/order_form.php",
+		"/C/SYNC/GitHub/JAMM/application/views/map_test.php",
+		"/C/SYNC/GitHub/JAMM/application/views/user_orders_this_week.php",
+		"/C/SYNC/GitHub/JAMM/application/views/user_reviews_this_week.php",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_orders_this_week.php",
+		"/C/SYNC/GitHub/JAMM/application/controllers/login.php",
+		"/C/SYNC/GitHub/JAMM/application/views/partials/orders.php",
+		"/C/SYNC/GitHub/JAMM/application/views/chef_reviews_this_week.php",
+		"/C/SYNC/GitHub/JAMM/index.html",
+		"/C/SYNC/GitHub/JAMM/application/controllers/main.php",
+		"/C/SYNC/GitHub/JAMM/application/config/routes.php",
+		"/C/SYNC/Dropbox/7 CODING/startbootstrap-landing-page-1.0.4/startbootstrap-landing-page-1.0.4/css/landing-page.css",
+		"/C/SYNC/Dropbox/7 CODING/startbootstrap-landing-page-1.0.4/startbootstrap-landing-page-1.0.4/index.html",
+		"/C/SYNC/GitHub/JAMM/login-reg.html",
+		"/C/SYNC/GitHub/JAMM/application/views/home.html",
+		"/C/SYNC/GitHub/JAMM/application/views/login-reg.html",
+		"/C/SYNC/GitHub/JAMM/index.php",
+		"/C/SYNC/GitHub/JAMM/application/views/home.css",
+		"/C/wamp/www/0 CodeIgniter Root/application/config/email.php",
+		"/C/wamp/www/0 CodeIgniter Root/application/views/user.php",
+		"/C/wamp/www/0 CodeIgniter Root/application/models/USER.php",
+		"/C/wamp/www/0 CodeIgniter Root/application/views/index.php",
+		"/C/wamp/www/0 CodeIgniter Root/application/views/friends.php",
+		"/C/SYNC/Dropbox/7 CODING/Code Igniter/Wall/index.php",
+		"/C/SYNC/Dropbox/7 CODING/Code Igniter/login and registration/application/views/index.php",
+		"/C/wamp/bin/apache/apache2.4.9/conf/httpd.conf",
+		"/C/wamp/www/AJAX/posts/application/controllers/main.php",
+		"/C/wamp/www/AJAX/posts/application/models/post.php",
+		"/C/wamp/www/0 CodeIgniter Root/assets/ajax.js",
+		"/C/wamp/www/0 CodeIgniter Root/application/config/database.php",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/0 CodeIgniter Root/application/models/post.php",
+		"/C/wamp/www/0 CodeIgniter Root/application/views/partials/posts.php",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/wamp/www/0 CodeIgniter Root/application/config/config.php",
+		"/C/wamp/www/AJAX/pokedex/index.html",
+		"/C/wamp/www/AJAX/weather/index.html",
+		"/C/wamp/www/AJAX/pokemon/index.html",
+		"/C/wamp/www/ci_clean_version-master/application/config/routes.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/html template.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/checkout.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/index.php",
+		"/C/wamp/www/ci_clean_version-master/application/config/database.php",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/main.php",
+		"/C/wamp/www/ci_clean_version-master/application/models/product.php",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/index.html",
+		"/C/wamp/www/ci_clean_version-master/application/models/user.php",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/Login.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/welcome.php",
+		"/C/Users/Armand/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/wamp/www/ci_clean_version-master/application/views/edit.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/new.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/show.php",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/products.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/products.php",
+		"/C/wamp/www/ci_clean_version-master/application/views/delete.php",
+		"/C/wamp/www/ci_clean_version-master/application/models/course.php",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/courses.php",
+		"/C/wamp/www/ci_clean_version-master/application/index.html",
+		"/C/SYNC/Dropbox/7 CODING/Group Activity/rfill_july-master/rfill_july-master/rfill.html",
+		"/C/wamp/www/ci_clean_version-master/application/controllers/users.php",
+		"/C/wamp/www/bike/index.php",
+		"/C/wamp/www/bike/blah.html",
+		"/C/wamp/www/OOP/OOPtest.php",
+		"/C/wamp/www/car/index.php",
+		"/C/wamp/www/html_helper/index.php",
+		"/C/SYNC/Dropbox/7 CODING/PHP/OOP/OOPtest.php",
+		"/C/wamp/www/OOP/world.php",
+		"/C/wamp/www/Wall/process-login.php",
+		"/C/wamp/www/Wall/wall.css",
+		"/C/wamp/www/Wall/new-connection.php",
+		"/C/wamp/www/Wall/process-register.php",
+		"/C/wamp/www/Wall/process-wall.php",
+		"/C/wamp/www/Wall/wall.php",
+		"/C/wamp/www/Wall/register.php",
+		"/C/wamp/www/Wall/login.php",
+		"/C/wamp/www/Wall/index.php",
+		"/C/wamp/www/Wall/materialize.js",
+		"/C/wamp/www/Wall/materialize.css",
+		"/C/wamp/www/Wall/index.html"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"details",
+			"category",
+			"newCompany",
+			"mongooses",
+			"padding",
+			"\">\n",
+			"users",
+			"offset",
+			">\n",
+			"center",
+			"60",
+			"documentroot",
+			"document",
+			"documentroot",
+			"directory",
+			"documentroot",
+			"directory",
+			"'",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/config/routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								663,
+								663
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/client_controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								305,
+								305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "client/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5067,
+								5067
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/partials/create.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2126,
+								2126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 611.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/partials/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1083,
+								1083
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/partials/company.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								935,
+								935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/partials/success.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/partials/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "client/partials/register.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1588,
+								1588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 11,
+					"file": "server/models/investment.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "server/models/company.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "server/models/project.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "server/models/investor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 15,
+					"file": "server/controllers/companies.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "server/controllers/investments.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "server/controllers/investors.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "server/controllers/projects.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1001,
+								1001
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 631.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fundhub.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

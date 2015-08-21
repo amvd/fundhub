@@ -123,12 +123,12 @@
 	            });
 	        },
 
-	        factory.createProject = function(info, callback) { //create project
+	        factory.createCompany = function(info, callback) { //create project
 
-	            $http.post('/createProject', info).success(function() {
-	            	users.push({
-	         					});    
-	            	callback(users);
+	            $http.post('/createCompany', info).success(function() {
+	            	// users.push({
+	         				// 	});    
+	            	// callback(users);
 	          	});
 
 	        }
@@ -139,6 +139,10 @@
 		            callback(users);
 	            });
         	}
+
+        	// factory.getUsers = function(callback) {
+
+        	// }
 
         	factory.getRecentlyFunded = function(callback) {
 	            $http.get('/getRecentlyFunded').success(function(output) {
@@ -183,6 +187,8 @@
 	          <li><a href="#/raise_funds"><h2 style="color: black;">Raise funds</h2></a></li>
 	          <li><a href="#/all_projects"><h2 style="color: black;">Explore</h2></a></li>
 	          <li><a href="#/what_is_fundhub"><h2 style="color: black;">What is FundHub</h2></a></li>
+	          <li><a href="#/company_login"><h2 style="color: black;">Company Login</h2></a></li>
+	          <li><a href="#/login"><h2 style="color: black;">Investors</h2></a></li>
 	        </ul>
 	        <ul class="nav navbar-right navbar-nav">
 	          <li class="dropdown">

@@ -12,13 +12,31 @@ myApp.controller('UsersController', function($scope, UsersFactory) {
 myApp.controller('CompaniesController', function($scope, $routeParams, UsersFactory) {
 	
 	var id = $routeParams.id;
-    UsersFactory.getUsers(function(data) {
-    $scope.users = data;
-    });
+    // UsersFactory.getUsers(function(data) {
+    // $scope.users = data;
+    // });
 
     UsersFactory.get_one_company(id, function(data) {
     $scope.companies = data;
     });
+
+    $scope.investment = function() {
+	          UsersFactory.investment($scope.newInvestment, function() {
+	            UserssFactory.get_one_company(id, function(data) {
+	            $scope.companies = data;
+	            console.log(data);
+	            });
+	          });
+	            $scope.newInvestment = {};
+	        }
+
+    $scope.createCompany = function(){
+
+		UsersFactory.createCompany($scope.newCompany, function(data) {
+				console.log("DING usersFactory createCompany");
+				$scope.company = data;
+			});
+	}
 });	
 
 
@@ -26,7 +44,7 @@ myApp.controller('ProjectsController', function($scope, UsersFactory) {
 
 	        UsersFactory.get_one_company(id, function(data) {
 	        $scope.companies = data;
-	        })
+	        });
 
 	        $scope.investment = function() {
 	          UsersFactory.investment($scope.newInvestment, function() {
