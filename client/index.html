@@ -120,6 +120,12 @@
               });
           }
 
+          factory.getInvestments = function(id, callback) {
+          	$http.get("/getInvestments/"+id).success(function(investments){
+          		callback(investments);
+          	});
+          }
+
           // factory.getUsers = function(callback) {
 
           // }

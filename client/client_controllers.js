@@ -16,6 +16,16 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     // $scope.users = data;
     // });
 
+	UsersFactory.getInvestments(function(investments){
+    	$scope.investments = investments;
+    });
+
+	$scope.totalAmount = 0;
+
+	for(var investment in $scope.investments){
+		$scope.totalAmount += investment.amount;
+	};
+
     UsersFactory.get_one_company(id, function(data) {
     	$scope.company = data;
     });
@@ -23,6 +33,8 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     UsersFactory.getCompanies(function(companies){
     	$scope.companies = companies;
     });
+
+
 
     $scope.investment = function() {
 	          UsersFactory.investment($scope.newInvestment, function() {

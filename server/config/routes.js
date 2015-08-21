@@ -40,4 +40,9 @@ module.exports = function(app){
 		Investors.create()
 	});
 
+	app.get("/getInvestments/:id", function(req,res){
+		console.log("DING routes get getInvestments");
+		Companies.readInvestments(req,res);
+	})
+
 }

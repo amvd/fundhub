@@ -2,6 +2,8 @@ var mongoose = require("mongoose");
 
 var Companies = mongoose.model("Companies");
 
+var Investments = mongoose.model("Investments");
+
 module.exports = (function(){
 	return {
 		create: function(req, res){
@@ -78,6 +80,13 @@ module.exports = (function(){
 			Companies.find({}).sort("-investments.length").limit(3).exec(function(err, result){
 				console.log("findPopular result:", result);
 				res.json(result);
+			});
+		},
+
+		readInvestments: function(req,res){
+			console.log("DING companies controller readInvestmentTotal");
+			Investments.find({_id: req.params.id}, function(investments){
+				res.json(investments);
 			});
 		},
 
