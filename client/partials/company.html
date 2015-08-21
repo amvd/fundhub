@@ -2,17 +2,17 @@
 	
 	<div>
 		<div style="width: 650px; display: inline-block;">
-			<img src="./../static/{{companies.logo}}.jpg" alt="company logo" >
+			<img src="./../static/{{company.logoUrl}}.jpg" alt="company logo" >
 			<h1 style="color: #FF3333;">{{ company.name }}</h1> 
-			<p>{{ company.project_title }}</p> 
-			<img src="./../static/{{companies.logo}}.jpg" alt="company logo" style="width: 500px; height: 250px;">
+			<p>{{ company.title }}</p> 
+			<img src="./../static/{{company.media.imageUrl}}.jpg" alt="company logo" style="width: 500px; height: 250px;">
 		</div>
 
 		<div style="width: 300px; display: inline-block;">
 			<h4>{{ company.project_funders }} Funders</h4>
-			<h4>${{ company.project_goal }}</h4>
-			<p>pledged of {{ company.project_current }} goal</p>
-			<h4>{{ company.project_deadline }}</h4>
+			<h4>${{ company.title }}</h4>
+			<p>pledged of {{ company.finance.goal }} goal</p>
+			<h4>{{ company.closingDate }}</h4>
 			<div>
 				<h3>Interested in this project?</h3>
 				<p>Invest in this project and be a part of the profits.</p>
@@ -35,13 +35,13 @@
 	<div>
 		<div style="width: 650 px; display: inline-block;">
 			<h3>About this project</h3>
-			{{ company.project_description }}
+			{{ company.descriptives.description }}
 			<h3>Highlights</h3>
-			<p>#1. {{ company.project_highlight#1 }} </p>
-			<p>#2. {{ company.project_highlight#2 }} </p>
-			<p>#3. {{ company.project_highlight#3 }} </p>
+			<p>#1. {{ company.descriptives.highlights[0] }} </p>
+			<p>#2. {{ company.descriptives.highlights[1] }} </p>
+			<p>#3. {{ company.descriptives.highlights[2] }} </p>
 			<h3>Elevator Pitch</h3>
-			<p>{{ company.project_elevator }}</p>
+			<p>{{ company.descriptives.pitch }}</p>
 		</div>
 
 		<div style="width: 300px; display: inline-block;">

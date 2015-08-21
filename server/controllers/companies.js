@@ -53,11 +53,11 @@ module.exports = (function(){
 
 		readOne: function(req,res){
 			console.log("DING companies controller read");
-			Companies.find({_id: req.projectId}, function(err, results){
+			Companies.findOne({_id: req.projectId}, function(err, result){
 				if(err){
 					console.log(err);
 				} else {
-					res.json(results);
+					res.json(result);
 				}
 			});
 		},
