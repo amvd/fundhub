@@ -42,12 +42,11 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
     		$scope.newInvestment.companyId = $routeParams.companyId;
 	          UsersFactory.investment($scope.newInvestment, function() {
 	            UsersFactory.get_one_company(id, function(data) {
-	            $scope.companies = data;
+	            $scope.company = data;
 	            console.log(data);
 	            });
 	          });
 	            $scope.newInvestment = {};
-	           	$location.path("/company/"+ $routeParams.companyId);
 	        }
 
     $scope.createCompany = function(){

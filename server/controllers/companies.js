@@ -92,7 +92,7 @@ module.exports = (function(){
 
 		findRecent: function(req,res){
 			console.log("DING companies controller Recent");
-			Companies.find({},function(err, result){
+			Companies.find({currentTotal: { $gte: "finance.goal" } }).limit(3).exec(function(err, result){
 				console.log("findPopular result:", result);
 				res.json(result);
 			});
