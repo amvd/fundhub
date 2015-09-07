@@ -1,54 +1,43 @@
-<div ng-controller="CompaniesController" style="width: 1000px;">
+<div ng-controller="CompaniesController">
 	<div class="container">
-	<div>
-		<div style="width: 650px; display: inline-block;">
-			<img src="./../static/images/small_img/{{company.logoUrl}}" alt="company logo" >
-			<h1 style="color: #FF3333;">{{ company.name }}</h1> 
-			<h1>{{ company.title }}</h1> 
-			<!-- <img src="./../static/images/small_img/{{company.media.imageUrl}}" alt="Photo" style="width: 500px; height: 250px;"> -->
-		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-lg-8">
+					<img src="./../static/images/small_img/{{company.logoUrl}}" alt="company logo" >
+					<h1 style="color: #FF3333;">{{ company.name }}</h1> 
+					<h1>{{ company.title }}</h1> 
+					<!-- <img src="./../static/images/small_img/{{company.media.imageUrl}}" alt="Photo" style="width: 500px; height: 250px;"> -->
+					<h3>About this project</h3>
+					{{ company.descriptives.description }}
+					<h3>Highlights</h3>
+					<p>#1. {{ company.descriptives.highlights[0] }} </p>
+					<p>#2. {{ company.descriptives.highlights[1] }} </p>
+					<p>#3. {{ company.descriptives.highlights[2] }} </p>
+					<h3>Elevator Pitch</h3>
+					<p>{{ company.descriptives.pitch }}</p>
+			</div>
 
-		<div style="width: 300px; display: inline-block;">
-			<!-- <h4>{{ company.project_funders }} Funders</h4> -->
-			<!-- <h4>{{ company.title }}</h4> -->
-			<p>${{totalAmount}} pledged of {{ company.finance.goal }} goal</p>
-			<h4>Deadline: {{ company.closingDate }}</h4>
-			<div>
-				<h3>Interested in this project?</h3>
-				<p>Invest in this project and be a part of the profits.</p>
-			
-			<form role="form">
-				  <div class="form-group">
-				    <label for="name">Your name:</label>
-				    <input type="text" class="form-control" id="name" ng-model="newInvestment.name">
-				  </div>
-				  <div class="form-group">
-				    <label for="amount">Amount:</label>
-				    <input type="text" class="form-control" id="amount" ng-model="newInvestment.amount">
-				  </div>
-				  <button type="submit" class="btn btn-default" ng-click="investment()">Invest</button>
-			</form>
+			<div class="col-sm-12 col-md-4 col-lg-4" style="border: 1px solid #ccc; padding: 20px 20px;">
+				<!-- <h4>{{ company.project_funders }} Funders</h4> -->
+				<!-- <h4>{{ company.title }}</h4> -->
+				<p>${{totalAmount}} pledged of {{ company.finance.goal }} goal</p>
+				<h4>Deadline: {{ company.closingDate }}</h4>
+				<div>
+					<h3>Interested in this project?</h3>
+					<p>Invest in this project and be a part of the profits.</p>
+				
+				<form role="form">
+					  <div class="form-group">
+					    <label for="name">Your name:</label>
+					    <input type="text" class="form-control" id="name" ng-model="newInvestment.name">
+					  </div>
+					  <div class="form-group">
+					    <label for="amount">Amount:</label>
+					    <input type="text" class="form-control" id="amount" ng-model="newInvestment.amount">
+					  </div>
+					  <button type="submit" class="btn btn-default" ng-click="investment()">Invest</button>
+				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<div>
-		<div style="width: 650 px; display: inline-block;">
-			<h3>About this project</h3>
-			{{ company.descriptives.description }}
-			<h3>Highlights</h3>
-			<p>#1. {{ company.descriptives.highlights[0] }} </p>
-			<p>#2. {{ company.descriptives.highlights[1] }} </p>
-			<p>#3. {{ company.descriptives.highlights[2] }} </p>
-			<h3>Elevator Pitch</h3>
-			<p>{{ company.descriptives.pitch }}</p>
-		</div>
-
-		<div style="width: 300px; display: inline-block;">
-			<h4>Documents</h4>
-			<a href="">Investor Pitch Deck-1</a>
-			<a href="">Investor Pitch Deck-2</a>
-		</div>
-	</div>
-</div>
 </div>
