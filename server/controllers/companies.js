@@ -91,8 +91,8 @@ module.exports = (function(){
 		},
 
 		findRecent: function(req,res){
-			console.log("DING companies controller findPopular");
-			Companies.find({}).sort({createdAt: -1}).limit(3).exec(function(err, result){
+			console.log("DING companies controller Recent");
+			Companies.find({},function(err, result){
 				console.log("findPopular result:", result);
 				res.json(result);
 			});

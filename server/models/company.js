@@ -31,6 +31,7 @@ var CompanySchema = new mongoose.Schema({
 		summaryPath: String,
 		termPath: String
 	},
+	currentTotal: Number,
 	investments: [{type: Schema.Types.ObjectId, ref: "Investments"}]
 
 });
