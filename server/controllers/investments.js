@@ -12,6 +12,7 @@ module.exports = (function(){
 			console.log("DING investments controller create");
 
 			var investment = new Investments({amount: req.body.amount, projectTitle: req.body.projectTitle, investorName: req.body.name});
+			console.log("Saving investment to company id:", req.body.companyId);
 
 					Companies.findOne({_id: req.body.companyId}, function(err, company){
 						if (err){

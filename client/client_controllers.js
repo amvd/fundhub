@@ -5,11 +5,11 @@ myApp.controller('UsersController', function($scope, UsersFactory) {
 	        });
 
 	        UsersFactory.getRecentlyFunded(function(output) {
-	        $scope.recent = output;
+	        $scope.funded = output;
 	        });
     	});
 
-myApp.controller('CompaniesController', function($scope, $routeParams, UsersFactory) {
+myApp.controller('CompaniesController', function($scope, $routeParams, UsersFactory, $location) {
 	
 	var id = $routeParams.companyId;
     // UsersFactory.getUsers(function(data) {
@@ -47,6 +47,7 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
 	            });
 	          });
 	            $scope.newInvestment = {};
+	           	$location.path("/company/"+ $routeParams.companyId);
 	        }
 
     $scope.createCompany = function(){
@@ -62,18 +63,18 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
 
 myApp.controller('ProjectsController', function($scope, UsersFactory) {
 	        UsersFactory.get_one_company(id, function(data) {
-	        $scope.companies = data;
+	        	$scope.companies = data;
 	        });
 
-	        $scope.investment = function() {
-	          UsersFactory.investment($scope.newInvestment, function() {
-	            UserssFactory.get_one_company(id, function(data) {
-	            $scope.companies = data;
-	            console.log(data);
-	            });
-	          });
-	            $scope.newInvestment = {};
-	        }
+	        // $scope.investment = function() {
+	        //   UsersFactory.investment($scope.newInvestment, function() {
+	        //     UsersFactory.get_one_company(id, function(data) {
+	        //     $scope.companies = data;
+	        //     console.log(data);
+	        //     });
+	        //   });
+	        //     $scope.newInvestment = {};
+	        // }
 
 	        $scope.createProject = function(){
 				UsersFactory.createCompany($scope.newCompany, function(data) {
