@@ -39,7 +39,7 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
 
     $scope.investment = function() {
 	          UsersFactory.investment($scope.newInvestment, function() {
-	            UserssFactory.get_one_company(id, function(data) {
+	            UsersFactory.get_one_company(id, function(data) {
 	            $scope.companies = data;
 	            console.log(data);
 	            });
