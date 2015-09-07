@@ -20,7 +20,7 @@
 				<!-- <h4>{{ company.project_funders }} Funders</h4> -->
 				<!-- <h4>{{ company.title }}</h4> -->
 				<p>${{totalAmount}} pledged of {{ company.finance.goal }} goal</p>
-				<h4>Deadline: {{ company.closingDate }}</h4>
+				<h4>Deadline: {{ company.closingDate | date:'yyyy-MM-dd' }}</h4>
 				<div>
 					<h3>Interested in this project?</h3>
 					<p>Invest in this project and be a part of the profits.</p>
