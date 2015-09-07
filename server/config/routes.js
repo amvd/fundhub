@@ -48,6 +48,6 @@ module.exports = function(app){
 	app.post("/investment", function(req,res){
 		console.log("DING routes post createInvestment");
 		Investments.create(req,res);
-	})
+	});
 
 }
