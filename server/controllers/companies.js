@@ -54,8 +54,8 @@ module.exports = (function(){
 		},
 
 		readOne: function(req,res){
-			console.log("DING companies controller read");
-			Companies.findOne({_id: req.projectId}, function(err, result){
+			console.log("DING companies controller readOne", req.params.companyId);
+			Companies.findOne({_id: req.params.companyId}, function(err, result){
 				if(err){
 					console.log(err);
 				} else {

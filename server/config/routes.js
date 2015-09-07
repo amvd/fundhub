@@ -8,8 +8,8 @@ var Investors = require("../controllers/investors.js");
 
 module.exports = function(app){
 
-	app.get("/show_a_company/:id", function(req,res){
-		console.log("DING routes show_a_company");
+	app.get("/show_a_company/:companyId", function(req,res){
+		console.log("DING routes show_a_company:", req.params.companyId);
 		Companies.readOne(req,res);
 	});
 
