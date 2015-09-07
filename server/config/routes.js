@@ -43,6 +43,11 @@ module.exports = function(app){
 	app.get("/getInvestments/:id", function(req,res){
 		console.log("DING routes get getInvestments");
 		Companies.readInvestments(req,res);
-	})
+	});
+
+	app.post("/investment", function(req,res){
+		console.log("DING routes post createInvestment");
+		Investments.create(req,res);
+	});
 
 }

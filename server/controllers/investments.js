@@ -11,46 +11,33 @@ module.exports = (function(){
 		create: function(req, res){
 			console.log("DING investments controller create");
 
-			var investment = new Investments(req.body.investment);
+			var investment = new Investments({amount: req.body.amount, projectTitle: req.body.projectTitle, investorName: req.body.name});
 
-			Investors.findOne({_id: req.body.investorId}, function(err, investor){
-				if (err){
-					console.log("DING find investor, errors:", err);
-				} else {
-					console.log("DING find investor:", investor);
-					Companies.findOne({_id: req.body.projectId}, function(err, company){
-							if (err){
-								console.log("DING find company, errors:", err);
-							} else {
-								console.log("DING find company:", project);
-								investor.investments.push(investment);
-								company.investments.push(investment);
-								company.currentTotal += investment.amount;
+					Companies.findOne({_id: req.body.companyId}, function(err, company){
+						if (err){
+							console.log("DING find company, errors:", err);
+						} else {
+							console.log("DING find company:", project);
+							company.investments.push(investment);
+							company.currentTotal += investment.amount;
 
-								investment.save(function(err, result){
-									if(err){
-										console.log("Something went wrong with saving the investment to db.");
-									} else {
-										company.save(function(err){
-											if(err){
-												console.log("Something went wrong saving the project to db.");
-											} else {
-												investor.save(function(err){
-													if(err){
-														console.log("Something went wrong with saving the investor to db.");
-													} else {
-														console.log("Successfully added the investment to db.");
-														res.json(result);
-													}
-												});
-											}
-										});
-									}
-								});
-							}
-						});
-				}
-			});
+							investment.save(function(err, result){
+								if(err){
+									console.log("Something went wrong with saving the investment to db.");
+								} else {
+									company.save(function(err){
+										if(err){
+											console.log("Something went wrong saving the project to db.");
+										} else {
+											console.log("Successfully added the investment to db.");
+											res.json(result);
+										}
+									});
+								}
+							});
+						}
+					});
+				
 
 			
 

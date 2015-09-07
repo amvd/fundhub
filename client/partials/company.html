@@ -4,15 +4,15 @@
 		<div style="width: 650px; display: inline-block;">
 			<img src="./../static/images/small_img/{{company.logoUrl}}" alt="company logo" >
 			<h1 style="color: #FF3333;">{{ company.name }}</h1> 
-			<p>{{ company.title }}</p> 
-			<img src="./../static/images/small_img/{{company.media.imageUrl}}" alt="Photo" style="width: 500px; height: 250px;">
+			<h1>{{ company.title }}</h1> 
+			<!-- <img src="./../static/images/small_img/{{company.media.imageUrl}}" alt="Photo" style="width: 500px; height: 250px;"> -->
 		</div>
 
 		<div style="width: 300px; display: inline-block;">
-			<h4>{{ company.project_funders }} Funders</h4>
-			<h4>${{ company.title }}</h4>
+			<!-- <h4>{{ company.project_funders }} Funders</h4> -->
+			<!-- <h4>{{ company.title }}</h4> -->
 			<p>${{totalAmount}} pledged of {{ company.finance.goal }} goal</p>
-			<h4>{{ company.closingDate }}</h4>
+			<h4>Deadline: {{ company.closingDate }}</h4>
 			<div>
 				<h3>Interested in this project?</h3>
 				<p>Invest in this project and be a part of the profits.</p>
@@ -20,11 +20,11 @@
 			<form role="form">
 				  <div class="form-group">
 				    <label for="name">Your name:</label>
-				    <input type="text" class="form-control" id="name">
+				    <input type="text" class="form-control" id="name" ng-model="newInvestment.name">
 				  </div>
 				  <div class="form-group">
 				    <label for="amount">Amount:</label>
-				    <input type="text" class="form-control" id="amount">
+				    <input type="text" class="form-control" id="amount" ng-model="newInvestment.amount">
 				  </div>
 				  <button type="submit" class="btn btn-default" ng-click="investment()">Invest</button>
 			</form>
