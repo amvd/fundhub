@@ -28,6 +28,7 @@ module.exports = function(app){
 
 	app.get("/getRecentlyFunded", function(req, res){
 		Companies.findRecent(req,res);
+		console.log("Routes. Companies:", res);
 	});
 
 	app.post("/createCompany", function(req, res){

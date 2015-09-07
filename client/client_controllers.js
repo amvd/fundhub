@@ -5,6 +5,7 @@ myApp.controller('UsersController', function($scope, UsersFactory) {
 	        });
 
 	        UsersFactory.getRecentlyFunded(function(output) {
+	        	console.log("Funded:", output);
 	        $scope.funded = output;
 	        });
     	});
