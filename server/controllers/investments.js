@@ -11,7 +11,7 @@ module.exports = (function(){
 		create: function(req, res){
 			console.log("DING investments controller create");
 
-			var investment = new Investments(req.body.investment);
+			var investment = new Investments({amount: req.body.amount, projectTitle: req.body.projectTitle, investorName: req.body.name});
 
 			Investors.findOne({_id: req.body.investorId}, function(err, investor){
 				if (err){
