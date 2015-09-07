@@ -78,7 +78,7 @@ module.exports = (function(){
 		findPopular: function(req,res){
 			console.log("DING companies controller findPopular");
 			Companies.find({}).sort("-investments.length").limit(3).exec(function(err, result){
-				console.log("findPopular result:", result);
+				// console.log("findPopular result:", result);
 				res.json(result);
 			});
 		},
@@ -92,8 +92,8 @@ module.exports = (function(){
 
 		findRecent: function(req,res){
 			console.log("DING companies controller Recent");
-			Companies.find({},function(err, result){
-				console.log("findPopular result:", result);
+			Companies.find({ $where: "this.currentTotal >= this.finance.goal" }).limit(3).exec(function(err, result){
+				console.log("findRecent result:", result);
 				res.json(result);
 			});
 		},
