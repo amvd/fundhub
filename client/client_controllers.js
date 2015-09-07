@@ -39,6 +39,7 @@ myApp.controller('CompaniesController', function($scope, $routeParams, UsersFact
 
     $scope.investment = function() {
     		$scope.newInvestment.projectTitle = $scope.company.title;
+    		$scope.newInvestment.companyId = $routeParams.companyId;
 	          UsersFactory.investment($scope.newInvestment, function() {
 	            UsersFactory.get_one_company(id, function(data) {
 	            $scope.companies = data;
